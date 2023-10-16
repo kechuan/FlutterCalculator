@@ -3,12 +3,11 @@
 .dart_tool/**
 
 .packages
-pub/**
-android/**
-build/**
-ios/**
-web/**
-windows/**
-
+./pub/**
+./android/**
+./build/**
+./ios/**
+./web/**
+./windows/**
 
 .flutter-plugins
