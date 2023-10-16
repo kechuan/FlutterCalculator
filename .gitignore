@@ -1,9 +1,14 @@
+.gitignore
 .DS_Store
-.dart_tool/
+.dart_tool/**
 
 .packages
-.pub/
+.pub/**
+android/**
+build/**
+ios/**
+web/**
+windows/**
 
-build/
 
 .flutter-plugins
