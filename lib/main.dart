@@ -369,6 +369,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
 
 				case "Enter": calculate(); return;
+				case "Tab": return;
 
 				default:print("event.logicalKey:${event.logicalKey},${num1InputFlag?"num1_display:$num1_display":"num2_display:$num2_display"}");
 			}

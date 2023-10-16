@@ -1,0 +1,10 @@
+^D:\DART\FLUTTER\FLUTTER_CALCULATOR\BUILD\WINDOWS\CMAKEFILES\3444E11BFD1DCEFB11D2FF1D1CDF29C4\GENERATE.STAMP.RULE
+setlocal
+"E:\Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/dart/flutter/flutter_calculator/windows -BD:/dart/flutter/flutter_calculator/build/windows --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/dart/flutter/flutter_calculator/build/windows/flutter_calculator.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

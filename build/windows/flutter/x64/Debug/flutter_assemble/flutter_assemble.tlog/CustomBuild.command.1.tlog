@@ -1,0 +1,28 @@
+^D:\DART\FLUTTER\FLUTTER_CALCULATOR\BUILD\WINDOWS\CMAKEFILES\DCB69F6551F2F9B4FFFFCCB4D739089E\FLUTTER_WINDOWS.DLL.RULE
+setlocal
+"E:\Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=D:\flutter PROJECT_DIR=D:\dart\flutter\flutter_calculator FLUTTER_ROOT=D:\flutter FLUTTER_EPHEMERAL_DIR=D:\dart\flutter\flutter_calculator\windows\flutter\ephemeral PROJECT_DIR=D:\dart\flutter\flutter_calculator FLUTTER_TARGET=D:\dart\flutter\flutter_calculator\lib\main.dart DART_DEFINES=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ==,RkxVVFRFUl9XRUJfQ0FOVkFTS0lUX1VSTD1odHRwczovL3d3dy5nc3RhdGljLmNvbS9mbHV0dGVyLWNhbnZhc2tpdC85MDY0NDU5YThiMGRjZDMyODc3MTA3ZjYwMDJjYzQyOWE3MTY1OWQxLw== DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=D:\dart\flutter\flutter_calculator\.dart_tool\package_config.json D:/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\DART\FLUTTER\FLUTTER_CALCULATOR\BUILD\WINDOWS\CMAKEFILES\00AFE87000B7D1B2F622DCFB52EE3423\FLUTTER_ASSEMBLE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\DART\FLUTTER\FLUTTER_CALCULATOR\WINDOWS\FLUTTER\CMAKELISTS.TXT
+setlocal
+"E:\Visual Studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/dart/flutter/flutter_calculator/windows -BD:/dart/flutter/flutter_calculator/build/windows --check-stamp-file D:/dart/flutter/flutter_calculator/build/windows/flutter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

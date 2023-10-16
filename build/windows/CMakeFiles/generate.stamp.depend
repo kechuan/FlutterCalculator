@@ -1,0 +1,21 @@
+# CMake generation dependency list for this directory.
+D:/dart/flutter/flutter_calculator/build/windows/CMakeFiles/3.26.4-msvc4/CMakeCXXCompiler.cmake
+D:/dart/flutter/flutter_calculator/build/windows/CMakeFiles/3.26.4-msvc4/CMakeRCCompiler.cmake
+D:/dart/flutter/flutter_calculator/build/windows/CMakeFiles/3.26.4-msvc4/CMakeSystem.cmake
+D:/dart/flutter/flutter_calculator/windows/CMakeLists.txt
+D:/dart/flutter/flutter_calculator/windows/flutter/generated_plugins.cmake
+E:/Visual Studio/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeCXXInformation.cmake
+E:/Visual Studio/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake
+E:/Visual Studio/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeGenericSystem.cmake
+E:/Visual Studio/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake
+E:/Visual Studio/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake
+E:/Visual Studio/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeRCInformation.cmake
+E:/Visual Studio/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake
+E:/Visual Studio/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake
+E:/Visual Studio/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+E:/Visual Studio/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/Compiler/MSVC-CXX.cmake
+E:/Visual Studio/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/Compiler/MSVC.cmake
+E:/Visual Studio/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/Platform/Windows-MSVC-CXX.cmake
+E:/Visual Studio/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/Platform/Windows-MSVC.cmake
+E:/Visual Studio/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/Platform/Windows.cmake
+E:/Visual Studio/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake

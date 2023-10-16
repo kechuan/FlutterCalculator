@@ -3,7 +3,7 @@
 .dart_tool/**
 
 .packages
-.pub/**
+pub/**
 android/**
 build/**
 ios/**

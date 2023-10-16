@@ -1,0 +1,13 @@
+D:/dart/flutter/flutter_calculator/build/windows/runner/Debug/data/icudtl.dat
+D:/dart/flutter/flutter_calculator/build/windows/runner/Debug/flutter_windows.dll
+D:/dart/flutter/flutter_calculator/build/windows/runner/Debug/data/flutter_assets/AssetManifest.bin
+D:/dart/flutter/flutter_calculator/build/windows/runner/Debug/data/flutter_assets/AssetManifest.json
+D:/dart/flutter/flutter_calculator/build/windows/runner/Debug/data/flutter_assets/FontManifest.json
+D:/dart/flutter/flutter_calculator/build/windows/runner/Debug/data/flutter_assets/fonts/MaterialIcons-Regular.otf
+D:/dart/flutter/flutter_calculator/build/windows/runner/Debug/data/flutter_assets/kernel_blob.bin
+D:/dart/flutter/flutter_calculator/build/windows/runner/Debug/data/flutter_assets/NOTICES
+D:/dart/flutter/flutter_calculator/build/windows/runner/Debug/data/flutter_assets/NOTICES.Z
+D:/dart/flutter/flutter_calculator/build/windows/runner/Debug/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
+D:/dart/flutter/flutter_calculator/build/windows/runner/Debug/data/flutter_assets/packages/fluttertoast/assets/toastify.css
+D:/dart/flutter/flutter_calculator/build/windows/runner/Debug/data/flutter_assets/packages/fluttertoast/assets/toastify.js
+D:/dart/flutter/flutter_calculator/build/windows/runner/Debug/data/flutter_assets/shaders/ink_sparkle.frag

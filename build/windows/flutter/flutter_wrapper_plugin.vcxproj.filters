@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\dart\flutter\flutter_calculator\windows\flutter\ephemeral\cpp_client_wrapper\core_implementations.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dart\flutter\flutter_calculator\windows\flutter\ephemeral\cpp_client_wrapper\standard_codec.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\dart\flutter\flutter_calculator\windows\flutter\ephemeral\cpp_client_wrapper\plugin_registrar.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\dart\flutter\flutter_calculator\windows\flutter\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{75EEA4F8-5F77-31E5-9DB8-94192638E547}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7D43AF99-87EC-31C6-BA14-5732E4E4DF61}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
