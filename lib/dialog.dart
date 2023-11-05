@@ -39,7 +39,6 @@ void showSimpleDialog(BuildContext context, List<String?> historyResult) async {
             children: <Widget>[
 				SimpleDialogOption(
 					onPressed: ()=> Navigator.pop(context, historyResult[0]),
-					//padding: const EdgeInsets.symmetric(vertical: 6),
 					child: Padding(
 						padding: const EdgeInsets.symmetric(vertical: 6),
 						child:  Text("${historyResult[0]}"),
@@ -49,7 +48,6 @@ void showSimpleDialog(BuildContext context, List<String?> historyResult) async {
 
 				SimpleDialogOption(
 					onPressed: ()=> Navigator.pop(context, historyResult[1]),
-					//padding: const EdgeInsets.symmetric(vertical: 6),
 					child: Padding(
 						padding: const EdgeInsets.symmetric(vertical: 6),
 						child: Text("${historyResult[1]}"),
@@ -70,7 +68,7 @@ void showSimpleDialog(BuildContext context, List<String?> historyResult) async {
 void showListview({required BuildContext context,Key? key,List<String?>? historyCalculated,List<String?>? historyResult}) async {
 
 
-  print("key:$key"); //flutter: key:[LabeledGlobalKey<_MyHomePageState>#bf177]
+  //print("key:${key}"); //flutter: key:[LabeledGlobalKey<_MyHomePageState>#bf177]
 
   //...不过很可惜这个key基本什么都做不了 因为它不处在拥有state的class范围内
   //唯一的作用 估计就真的只是一个key密钥 而不是key钥匙了
@@ -92,11 +90,6 @@ void showListview({required BuildContext context,Key? key,List<String?>? history
 							mainAxisAlignment: MainAxisAlignment.spaceAround,
 							children: [
 								Text("${historyCalculated?[index]} = "),
-
-                
-
-                //Text("${context.widget[index]} = "),
-		
 								Text("${historyResult?[index]}"),
 							],
 						),

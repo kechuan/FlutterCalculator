@@ -4,8 +4,6 @@ import 'package:fluttertoast/fluttertoast.dart';
 
 import './dialog.dart';
 
-
-
 void main() => runApp(new MyApp());
 
 
@@ -21,10 +19,6 @@ void ToasterTest(){
   );
 }
 
-//override showBasicAlertDialog 需求传入 context 来明确自己在widgetTree的哪里
-
-//但是不要重复build!
-
 
 class MyApp extends StatelessWidget {
 	@override
@@ -35,33 +29,32 @@ class MyApp extends StatelessWidget {
 			colorScheme: ColorScheme.fromSeed(seedColor:const Color.fromARGB(255, 125, 190, 243),), 
 			//useMaterial3: true
 		),
-		home: Focus(child: new MyHomePage(title: 'Calculator')), //Fpcus部署
+		home: new MyHomePage(title: 'Calculator')
 		
 		);
 	}
 }
 
-//void test(){
-//	final GlobalKey<_MyHomePageState> key = GlobalKey<_MyHomePageState>();
-//	print(key.currentState?.num1);
-//}
-
-
 
 class MyHomePage extends StatefulWidget {
 	//MyHomePage 原生需求key和required需求 title title上面已经提供了'Calculator'
-	MyHomePage({Key? key, required this.title}) : super(key: key);
+	MyHomePage(
+		//final GlobalKey<_MyHomePageState> HomePageKey = GlobalKey<_MyHomePageState>();
+		{Key? key, required this.title}
+		
+	) : super(key: key);
+
+	//??? 为什么你的构筑函数 是这样的? ({}) 是为了传参是吗 那我怎么加定义内容而不是传参需求呢
+
 
 	final String title; //这里的数据 疑似可以直接在state中通过 widget.xxx调用?
-	//final GlobalKey<MyHomePage> HomePageKey = GlobalKey<MyHomePage>();
-	final String testText = "test";
+	final GlobalKey<_MyHomePageState> HomePageKey = GlobalKey<_MyHomePageState>();
 
 	
-
 	@override
 	_MyHomePageState createState() => new _MyHomePageState();
 
-
+	
 }
 
 class _MyHomePageState extends State<MyHomePage> {
@@ -70,27 +63,11 @@ class _MyHomePageState extends State<MyHomePage> {
 	final historyCalculated = List<String?>.filled(6, null);
 	final historyResult = List<String?>.filled(6, null);
 
-	final num1LabelFocus = FocusNode();
-
-	//final GlobalKey<State<StatefulWidget>> HomePageKey = GlobalKey<State<StatefulWidget>>();
-
-	final GlobalKey<_MyHomePageState> HomePageKey = GlobalKey<_MyHomePageState>();
 	
-
   	final label_num1Key = UniqueKey();
 
-	
-	//构造函数
-	_MyHomePageState(){
-		RawKeyboard.instance.addListener(handleKeyPress);
-		num1LabelFocus.addListener((){
-			print(num1LabelFocus.hasFocus); 
-			//FocusScope.of(context).unfocus();
-		});
-
-	}
-
 	bool CalculatingFlag = true;
+	final num1LabelFocus = FocusNode();
 	
 
 	String tempStorage = "0";
@@ -110,10 +87,16 @@ class _MyHomePageState extends State<MyHomePage> {
 	int historyWriteCount = 0;
 
 	
+	//构造函数
+	_MyHomePageState(){
+		RawKeyboard.instance.addListener(handleKeyPress);
+		num1LabelFocus.addListener((){
+			print(num1LabelFocus.hasFocus); 
+			//FocusScope.of(context).unfocus();
+		});
+	}
 
   	//Fluttertoast flutterToaster = Fluttertoast();
-
-	
 
 	void calculate(){
 
@@ -371,7 +354,7 @@ class _MyHomePageState extends State<MyHomePage> {
 				case "Enter": calculate(); return;
 				case "Tab": return;
 
-				default:print("event.logicalKey:${event.logicalKey},${num1InputFlag?"num1_display:$num1_display":"num2_display:$num2_display"}");
+				default:print("event.logicalKey:${event.logicalKey},${num1InputFlag?"num1_display:${num1_display}":"num2_display:$num2_display"}");
 			}
 
 			setState((){});
@@ -474,7 +457,11 @@ class _MyHomePageState extends State<MyHomePage> {
 					print("num1:${num1_display}");
 					num1InputFlag = true;
 					setState(() {});
+					//GlobalkeyAccess(HomePageKey);
+					//print("context num1:${context.findAncestorStateOfType<_MyHomePageState>()}"); //为什么访问currentState会是null??
+
 					
+				
 				},
 
 				style: ButtonStyle(
@@ -610,11 +597,14 @@ class _MyHomePageState extends State<MyHomePage> {
 
 	@override
 		Widget build(BuildContext context) {
+			print("HomePageKey num1: ${widget.HomePageKey.currentState}");	//为什么访问currentState会是null??
+			print("context num1:${context.findAncestorStateOfType<_MyHomePageState>()}"); //context也是一样 太奇怪了
+
 			return Scaffold(
 			appBar: AppBar(title: Text(widget.title)),
 			body: 
 				GestureDetector(
-					behavior:HitTestBehavior.translucent,
+					behavior:HitTestBehavior.opaque,
 					onTap: (){
 						
 						print("Tap detectd");
@@ -711,7 +701,9 @@ class _MyHomePageState extends State<MyHomePage> {
 							//fit: FlexFit.tight,
 								child:
 									TextButton(
-										onPressed: ()=>showListview(context:context,historyCalculated:historyCalculated,historyResult:historyResult),
+										onPressed: (){
+											showListview(context:context,historyCalculated:historyCalculated,historyResult:historyResult);
+										},
 										//onPressed: ()=>context.findAncestorStateOfType(),
 										style: ButtonStyle(
 											mouseCursor: MaterialStateMouseCursor.clickable
