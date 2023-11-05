@@ -20,7 +20,7 @@ showDialog实现的**历史记录**
 
 
 
-![history](.\show\history.png)
+![history](.\screenshot\history.png)
 
 
 
